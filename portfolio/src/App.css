@@ -1,5 +1,4 @@
 #root {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -7,7 +6,6 @@
     width: 100vw;
     min-height: 100vh;
     margin: 0;
-    padding: 2rem;
     padding-top: 65px;
 }
 
