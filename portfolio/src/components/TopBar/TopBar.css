@@ -7,3 +7,7 @@
     margin: 0 5px;
     font-size: medium;
 }
+
+button {
+    background-color: none;
+}
