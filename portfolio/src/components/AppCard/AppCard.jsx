@@ -8,7 +8,6 @@ import Button from "@mui/material/Button";
 import "./AppCard.css";
 
 const AppCard = ({ app }) => {
-
     return (
         <Card
             sx={{
@@ -38,7 +37,16 @@ const AppCard = ({ app }) => {
             </div>
             <div>
                 <CardActions>
-                    <Button size="small">View</Button>
+                    {app.ViewLink !== null && (
+                        <Button
+                            size="small"
+                            onClick={() =>
+                                window.open(`${app.ViewLink}`, "_blank")
+                            }
+                        >
+                            View
+                        </Button>
+                    )}
 
                     <Button
                         size="small"

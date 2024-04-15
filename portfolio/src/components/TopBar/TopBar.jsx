@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import AccountCircle from "@mui/icons-material/AccountCircle";
+import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { ThemeProvider } from "@emotion/react";
 import CustomTheme from "../Themes/CustomTheme";
@@ -100,7 +100,7 @@ const TopBar = () => {
                                 onClick={() => navigate("/contact")}
                                 color="inherit"
                             >
-                                <AccountCircle />
+                                <EmailIcon />
                                 <p className="text-icons">Contact</p>
                             </IconButton>
                         </Box>

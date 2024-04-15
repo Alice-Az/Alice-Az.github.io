@@ -13,7 +13,6 @@ const AppGrid = () => {
                 container
                 flexDirection="row"
                 flexWrap="wrap"
-                justifyContent="space-evenly"
                 alignItems="center"
             >
                 {AppsData.map((app) => (
