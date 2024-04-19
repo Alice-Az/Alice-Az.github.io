@@ -17,8 +17,8 @@ const AppsData = [
         Description: `Online shop simulation with product search and ordering functionalities (Frontend2 course). Material UI was used for the styling.
             The requests go through local API (minimal API) and the data is stored in a local database. No kind of identity/security involved`,
         Image: topstyle,
-        ViewLink: "",
-        CodeLink: "",
+        ViewLink: "https://purple-grass-07071e403.5.azurestaticapps.net/",
+        CodeLink: "https://github.com/Alice-Az/TopStyle",
     },
     {
         Title: "Bank API",
