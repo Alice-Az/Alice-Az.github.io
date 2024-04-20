@@ -14,16 +14,21 @@ const AppGrid = () => {
                 flexDirection="row"
                 flexWrap="wrap"
                 alignItems="center"
+                sx={{ justifyContent: { xs: "center", md: "flex-start" } }}
+                maxWidth="100%"
             >
                 {AppsData.map((app) => (
                     <Grid
-                        container
+                        item
                         xs={12}
-                        sm={6}
-                        md={4}
+                        sm={8}
+                        md={6}
+                        lg={4}
+                        display="flex"
                         justifyContent="center"
                         alignItems="center"
                         padding="40px 0px"
+                        key={app.Id}
                     >
                         <AppCard app={app} />
                     </Grid>

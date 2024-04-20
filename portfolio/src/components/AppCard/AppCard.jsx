@@ -12,7 +12,7 @@ const AppCard = ({ app }) => {
         <Card
             sx={{
                 maxWidth: 345,
-                height: 500,
+                height: { md: "500px" },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -21,7 +21,7 @@ const AppCard = ({ app }) => {
             <div className="card-content">
                 <CardMedia
                     component="img"
-                    height="250"
+                    // height="250"
                     image={app.Image}
                     sx={{ objectFit: "contain" }}
                     alt="green iguana"

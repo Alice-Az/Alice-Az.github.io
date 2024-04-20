@@ -11,3 +11,20 @@
 button {
     background-color: none;
 }
+
+.app-name {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .text-icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app-name {
+        font-size: 1.5rem;
+    }
+}

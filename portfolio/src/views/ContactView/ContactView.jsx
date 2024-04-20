@@ -18,15 +18,16 @@ const ContactView = () => {
                         filter: `drop-shadow(0 0 0.1rem ${CustomTheme.palette.primary.dark})`,
                         fontWeight: "600",
                     }}
+                    sx={{ fontSize: { xs: "1rem", sm: "2rem" } }}
                 >
                     Contact
                 </Typography>
                 <Box
                     boxShadow={`2px 2px 4px ${CustomTheme.palette.primary.main}`}
                     borderRadius="3px"
-                    style={{
+                    sx={{
+                        width: { xs: "150px", sm: "400px" },
                         height: 4,
-                        width: 400,
                         backgroundColor: "#fbfaf9",
                     }}
                 ></Box>
@@ -37,6 +38,7 @@ const ContactView = () => {
                     fontFamily="Montserrat"
                     color={CustomTheme.palette.primary.contrastText}
                     margin="20px 0px"
+                    sx={{ fontSize: { xs: "0.8rem", sm: "1.25rem" } }}
                 >
                     Email: alice.azemar1@gmail.com
                 </Typography>

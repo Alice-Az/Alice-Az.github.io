@@ -49,9 +49,19 @@ const TopBar = () => {
 
     return (
         <ThemeProvider theme={CustomTheme}>
-            <Box sx={{ width: "100vw" }}>
-                <AppBar>
-                    <Toolbar>
+            <Box>
+                <AppBar
+                    style={{
+                        width: "100%",
+                    }}
+                >
+                    <Toolbar
+                        style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            justifyContent: "space-between",
+                        }}
+                    >
                         <NavLink
                             to={"/"}
                             style={{
@@ -64,23 +74,20 @@ const TopBar = () => {
                                 noWrap
                                 component="div"
                                 sx={{
-                                    display: { xs: "none", sm: "block" },
+                                    display: { xs: "flex", sm: "block" },
                                     fontWeight: "bold",
                                     fontFamily: "Pixelify Sans",
                                     fontSize: "2rem",
                                 }}
                             >
-                                Azemar.dev
+                                <p className="app-name">Azemar.dev</p>
                             </Typography>
                         </NavLink>
 
                         <Box sx={{ flexGrow: 1 }} />
-                        <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                        <Box sx={{ display: { xs: "flex", md: "flex" } }}>
                             <IconButton
                                 size="large"
-                                aria-label="account of current user"
-                                aria-controls={menuId}
-                                aria-haspopup="true"
                                 onClick={() =>
                                     window.open(
                                         "https://github.com/Alice-Az",
