@@ -11,7 +11,8 @@ const AppsData = [
             The requests go through minimal API and the data is stored in a database (both hosted in Azure). JWT is used for authorization.`,
         Image: topstyle,
         ViewLink: "https://purple-grass-07071e403.5.azurestaticapps.net/",
-        CodeLink: "https://github.com/Alice-Az/TopStyle",
+        BECodeLink: "https://github.com/Alice-Az/TopStyle",
+        FECodeLink: "https://github.com/Alice-Az/TopStyleAPI-backend",
     },
     {
         Id: "2",
@@ -20,7 +21,8 @@ const AppsData = [
             The API used is AccuWeather and is limited to 25 calls a day, so if the app is not working please wait until tomorrow :)`,
         Image: weatherapp,
         ViewLink: "https://proud-sea-033be9d03.5.azurestaticapps.net",
-        CodeLink: "https://github.com/Alice-Az/WeatherApp",
+        BECodeLink: null,
+        FECodeLink: "https://github.com/Alice-Az/WeatherApp",
     },
     {
         Id: "3",
@@ -29,7 +31,8 @@ const AppsData = [
             Authorization and authentication using Core Identity and JWT.`,
         Image: bankAPI,
         ViewLink: null,
-        CodeLink: "https://github.com/Alice-Az/Uppgift3-Bank",
+        BECodeLink: "https://github.com/Alice-Az/Uppgift3-Bank",
+        FECodeLink: null,
     },
     {
         Id: "4",
@@ -38,7 +41,8 @@ const AppsData = [
             Authorization not included.`,
         Image: recipeAPI,
         ViewLink: null,
-        CodeLink: "https://github.com/Alice-Az/Uppgift1-RecipeDB",
+        BECodeLink: "https://github.com/Alice-Az/Uppgift1-RecipeDB",
+        FECodeLink: null,
     },
 ];
 
