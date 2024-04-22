@@ -47,13 +47,28 @@ const AppCard = ({ app }) => {
                             View
                         </Button>
                     )}
-
-                    <Button
-                        size="small"
-                        onClick={() => window.open(`${app.CodeLink}`, "_blank")}
-                    >
-                        Code
-                    </Button>
+                    {app.FECodeLink != null && (
+                        <Button
+                            size="small"
+                            sx={{ maxWidth: "30%" }}
+                            onClick={() =>
+                                window.open(`${app.FECodeLink}`, "_blank")
+                            }
+                        >
+                            github (frontend)
+                        </Button>
+                    )}
+                    {app.BECodeLink != null && (
+                        <Button
+                            size="small"
+                            sx={{ maxWidth: "30%" }}
+                            onClick={() =>
+                                window.open(`${app.BECodeLink}`, "_blank")
+                            }
+                        >
+                            github (backend)
+                        </Button>
+                    )}
                 </CardActions>
             </div>
         </Card>
