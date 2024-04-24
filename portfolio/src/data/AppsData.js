@@ -11,8 +11,8 @@ const AppsData = [
             The requests go through minimal API and the data is stored in a database (both hosted in Azure). JWT is used for authorization.`,
         Image: topstyle,
         ViewLink: "https://purple-grass-07071e403.5.azurestaticapps.net/",
-        BECodeLink: "https://github.com/Alice-Az/TopStyle",
-        FECodeLink: "https://github.com/Alice-Az/TopStyleAPI-backend",
+        BECodeLink: "https://github.com/Alice-Az/TopStyleAPI-backend",
+        FECodeLink: "https://github.com/Alice-Az/TopStyle",
     },
     {
         Id: "2",
