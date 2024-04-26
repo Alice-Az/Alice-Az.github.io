@@ -12,7 +12,7 @@ const AppCard = ({ app }) => {
         <Card
             sx={{
                 maxWidth: 345,
-                height: { md: "500px" },
+                height: { md: "550px" },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -31,7 +31,13 @@ const AppCard = ({ app }) => {
                         {app.Title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {app.Description}
+                        {app.Description}{" "}
+                        {app.Id === "1" && (
+                            <span style={{ color: "red" }}>
+                                Temporary unavailable until 01/05/24 because of
+                                database use limit reached on azure.
+                            </span>
+                        )}
                     </Typography>
                 </CardContent>
             </div>
