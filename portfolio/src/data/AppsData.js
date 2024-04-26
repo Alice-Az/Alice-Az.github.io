@@ -8,7 +8,7 @@ const AppsData = [
         Id: "1",
         Title: "TopStyle",
         Description: `Online shop simulation with product search and ordering functionalities (Frontend2 course). Material UI was used for the styling.
-            The requests go through minimal API and the data is stored in a database (both hosted in Azure). JWT is used for authorization.`,
+            The requests go through minimal API and the data is stored in a database (both hosted in Azure). JWT is used for authorization. `,
         Image: topstyle,
         ViewLink: "https://purple-grass-07071e403.5.azurestaticapps.net/",
         BECodeLink: "https://github.com/Alice-Az/TopStyleAPI-backend",
