@@ -12,7 +12,7 @@ const AppCard = ({ app }) => {
         <Card
             sx={{
                 maxWidth: 345,
-                height: { md: "550px" },
+                height: { md: "500px" },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -21,23 +21,16 @@ const AppCard = ({ app }) => {
             <div className="card-content">
                 <CardMedia
                     component="img"
-                    // height="250"
                     image={app.Image}
                     sx={{ objectFit: "contain" }}
-                    alt="green iguana"
+                    alt="picture of a webpage"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                         {app.Title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {app.Description}{" "}
-                        {/* {app.Id === "1" && (
-                            <span style={{ color: "red" }}>
-                                Temporary unavailable until 01/05/24 because of
-                                database use limit reached on azure.
-                            </span>
-                        )} */}
+                        {app.Description}
                     </Typography>
                 </CardContent>
             </div>
