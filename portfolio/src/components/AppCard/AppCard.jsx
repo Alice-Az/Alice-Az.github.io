@@ -32,12 +32,12 @@ const AppCard = ({ app }) => {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {app.Description}{" "}
-                        {app.Id === "1" && (
+                        {/* {app.Id === "1" && (
                             <span style={{ color: "red" }}>
                                 Temporary unavailable until 01/05/24 because of
                                 database use limit reached on azure.
                             </span>
-                        )}
+                        )} */}
                     </Typography>
                 </CardContent>
             </div>
