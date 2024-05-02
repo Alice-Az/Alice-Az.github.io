@@ -12,7 +12,7 @@ const AppCard = ({ app }) => {
         <Card
             sx={{
                 maxWidth: 345,
-                height: { md: "500px" },
+                height: { md: "530px" },
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -25,12 +25,19 @@ const AppCard = ({ app }) => {
                     sx={{ objectFit: "contain" }}
                     alt="picture of a webpage"
                 />
-                <CardContent>
+                <CardContent style={{ paddingBottom: "6px" }}>
                     <Typography gutterBottom variant="h5" component="div">
                         {app.Title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {app.Description}
+                        {app.Description}{" "}
+                        {app.Id === "1" && (
+                            <span style={{ fontWeight: "bolder" }}>
+                                Slow loading when idle. Need to wait before the
+                                content appears the first time or even reload
+                                the page.
+                            </span>
+                        )}
                     </Typography>
                 </CardContent>
             </div>
